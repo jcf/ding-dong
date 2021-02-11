@@ -1,0 +1,27 @@
+#+TITLE: Ding Dong
+
+Toy Ring app to demonstrate hooking into request-response with middleware that
+injects naive CORS headers.
+
+Does not support preflight requests. Does not validate origins. Only good for
+demo purposes.
+
+See Pedestal for anything more than a toy web app. Refer to MDN for docs.
+
+- https://github.com/pedestal/pedestal
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+* Development
+#+begin_src emacs-lisp
+(cider-jack-in)
+#+end_src
+
+* Server
+#+begin_src sh
+clojure -M ding.dong
+#+end_src
+
+* Tests
+#+begin_src sh :results output verbatim
+clojure -M:dev:test:runner
+#+end_src

@@ -1,0 +1,7 @@
+*.class
+*.jar
+/.cpcache
+/logs
+/target
+pom.xml
+pom.xml.asc

@@ -1,0 +1,36 @@
+{:extend {:flow? true :indent 0 :nl-separator? true}
+ :fn-map {"are"     [:none {:list       {:indent-only? true}
+                            :next-inner {:list {:indent-only? false}}}]
+          "cond->"  :arg1-force-nl
+          "cond->>" :arg1-force-nl
+          "deftest" :arg1-force-nl
+          "s/cat"   [:binding {:binding {:force-nl? false}}]
+          "s/fdef"  :arg1-force-nl
+          "testing" :arg1-force-nl
+          "try"     :flow}
+ :map    {:comma?        false
+          :key-order     [:paths
+                          :deps
+                          :aliases
+                          :extra-paths
+                          :extra-deps
+                          :replace-paths
+                          :replace-deps
+                          :keys
+                          :or
+                          :status
+                          :headers
+                          :body]
+          :sort-in-code? true
+          :sort?         true}
+ :set    {:sort-in-code? true :sort? true}
+ :style  [:binding-nl
+          :extend-nl
+          :hiccup
+          :how-to-ns
+          :justified
+          :map-nl
+          :pair-nl
+          :respect-bl
+          :respect-nl]
+ :width  80}
